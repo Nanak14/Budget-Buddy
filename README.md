@@ -29,9 +29,9 @@ Ensure that you have the latest version of Flutter and Dart SDK installed. If no
 To install the Finance Management App:
 
 Clone this repository to your machine.
-
 ```bash
 git clone https://github.com/Nanak14/Budget-Buddy
+```
 
 ## Usage
 
@@ -52,5 +52,3 @@ Before submitting a pull request, please make sure your changes do not break the
 ## Support
 
 If you encounter any issues while setting up or using the application, please create an issue in the Github repository. You can also contact us via email at `snanak1403@example.com`.
-
-
