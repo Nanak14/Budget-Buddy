@@ -51,4 +51,4 @@ Before submitting a pull request, please make sure your changes do not break the
 
 ## Support
 
-If you encounter any issues while setting up or using the application, please create an issue in the Github repository. You can also contact us via email at `jashanjotsinghfdk@gmail.com`.
+If you encounter any issues while setting up or using the application, please create an issue in the Github repository. You can also contact us via email at `snanak1403@gmail.com` and `jashanjotsinghfdk@gmail.com`.
