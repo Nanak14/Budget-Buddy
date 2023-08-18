@@ -1,21 +1,10 @@
 import 'package:budget_buddy/signUpScreen.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(
-    MaterialApp(
-      title: 'Budget Buddy',
-      initialRoute: '/',
-      routes: {
-        '/': (context) => const MyApp(),
-        '/signup': (context) => const signUpScreen(),
-      },
-    ),
-  );
-}
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+
+class signUpScreen extends StatelessWidget {
+  const signUpScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +23,7 @@ class MyApp extends StatelessWidget {
                       Container(
                         margin: const EdgeInsets.symmetric(vertical: 30),
                         child: const Text(
-                          "LOGIN",
+                          "SIGN UP",
                           style: TextStyle(
                             fontSize: 30,
                             fontFamily: 'Montserrat',
@@ -96,21 +85,9 @@ class MyApp extends StatelessWidget {
                         hintStyle: TextStyle(color: Colors.grey[500])),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(25.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Text(
-                        'Forgot Password?',
-                        style: TextStyle(color: Colors.grey[600]),
-                      ),
-                    ],
-                  ),
-                ),
 
                 const SizedBox(
-                  height: 25,
+                  height: 50,
                 ),
 
                 Padding(
@@ -120,46 +97,18 @@ class MyApp extends StatelessWidget {
                       SizedBox(
                         width: double.infinity,
                         height: 50,
-                        child: ElevatedButton(
-                          onPressed: () {},
-                          style: ElevatedButton.styleFrom(
-                            foregroundColor: Colors.white,
-                            backgroundColor: Colors.black,
-                          ),
-                          child: const Text("LOGIN",
+                        child: ElevatedButton(onPressed: () {}, style: ElevatedButton.styleFrom(
+                          foregroundColor: Colors.white,
+                          backgroundColor: Colors.black,
+                        ), child: const Text("SIGN UP",
                           style: TextStyle(
-                            fontSize: 15,
-                            fontFamily: 'Montserrat'
-                          ),),
-                        ),
+                              fontSize: 15,
+                              fontFamily: 'Montserrat'
+                          ),),),
                       )
                     ],
                   ),
                 ),
-                const SizedBox(
-                  height: 30,
-                ),
-
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Column(
-                    children: [
-                      ElevatedButton(
-                          onPressed: () {
-                            Navigator.pushNamed(context, "/signup");
-                          },
-                          style: ElevatedButton.styleFrom(
-                              foregroundColor: Colors.black,
-                              //change background color of button
-                              backgroundColor: Colors.white,
-                              //change text color of button
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(25),
-                              )),
-                          child: const Text("New here? Sign up")),
-                    ],
-                  ),
-                )
               ],
             ),
           ),
