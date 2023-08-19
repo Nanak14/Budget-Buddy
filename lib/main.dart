@@ -1,7 +1,12 @@
 import 'package:budget_buddy/signUpScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() async {
+  // We call this function to rid of and exception that occurs for some reason.
+  WidgetsFlutterBinding.ensureInitialized();
+  // We initialize the Firebase app here.
+  await Firebase.initializeApp();
   runApp(
     MaterialApp(
       title: 'Budget Buddy',
